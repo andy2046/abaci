@@ -1,9 +1,11 @@
-# abaci
-**+-*/** arithmetical ops done precisely in JavaScript
-
-## Examples
-```js
-const { precise, multiply, divide, plus, minus, round } = require('abaci')
+const {
+  precise,
+  multiply,
+  divide,
+  plus,
+  minus,
+  round
+} = require('../dist/abaci')
 
 console.log(precise(1.0000000000000001))
 //=> 1
@@ -56,19 +58,3 @@ console.log(round(0.105, 2))
 //=> 0.11
 console.log(round(1.2345e3, 3))
 //=> 1234.5
-```
-
-## Installation
-
-```
-npm install --save abaci
-```
-
-## Usage
-You can import from `abaci`:
-
-```js
-const { precise, multiply, divide, plus, minus, round } = require('abaci');
-// or
-import { precise, multiply, divide, plus, minus, round } from 'abaci';
-```
